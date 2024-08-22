@@ -8,7 +8,7 @@ MYSQL_DATABASE="log_backup"   # 스키마명 (데이터베이스 이름)
 MYSQL_TABLE="app_logs"      # 삽입할 테이블명
 
 # 로그 파일
-LOG_FILE="log.log"
+LOG_FILE="home/ubuntu/log.log"
 
 # 로그 파일을 한 줄씩 읽어서 처리
 while IFS=$',' read -r logtype logdate loguser logendpoint; do
