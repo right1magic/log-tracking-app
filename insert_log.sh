@@ -13,5 +13,6 @@ LOG_FILE="log.log"
 # 로그 파일을 한 줄씩 읽어서 처리
 while IFS=$',' read -r logtype logdate loguser logendpoint; do
     mysql -h "$MYSQL_HOST" -u "$MYSQL_USER" -P 3306 -p"$MYSQL_PASSWORD" "$MYSQL_DATABASE" -e \
-    "INSERT INTO $MYSQL_TABLE VALUES ('$logtype', '$logdate', '$loguser', '$logendpoint');"
+    "INSERT INTO $MYSQL_TABLE VALUES ('$id', '$logd_type', '$log_timestamp', '$url', '$method', '$user_id', '$transaction_id',
+    '$product_id', '$cart_id', '$order_id', '$payload', '$client_ip', '$user_agent', '$referer');"
 done < "$LOG_FILE"
