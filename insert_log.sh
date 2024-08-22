@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # MySQL 접속 정보
-MYSQL_HOST="1bc8cc38-e15d-4308-9512-cf3a4cdf975a.internal.kr1.mysql.rds.nhncloudservice.comt"  # MySQL 서버의 엔드포인트 또는 IP 주소
+MYSQL_HOST="1bc8cc38-e15d-4308-9512-cf3a4cdf975a.internal.kr1.mysql.rds.nhncloudservice.com"  # MySQL 서버의 엔드포인트 또는 IP 주소
 MYSQL_USER="log_admin"      # MySQL 사용자명
 MYSQL_PASSWORD="log_admin"  # MySQL 비밀번호
 MYSQL_DATABASE="log_backup"   # 스키마명 (데이터베이스 이름)
